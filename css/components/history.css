@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 0.5rem;
+}
+
+main {
   padding-inline: 1rem;
 }
 
@@ -19,5 +22,13 @@
     padding: 0.2rem;
     position: sticky;
     left: 0;
+  }
+}
+
+.clear {
+  margin-bottom: 1rem;
+
+  button {
+    padding: 0.5rem;
   }
 }

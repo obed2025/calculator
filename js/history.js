@@ -7,6 +7,17 @@ if (!history.length) {
   historyEl.innerHTML = '<p>Nothing found in history!<p>';
 }
 
+const clearBtn = document.createElement('button');
+clearBtn.innerText = 'Clear History';
+clearBtn.addEventListener('click', () => {
+  localStorage.removeItem('history');
+  document.location = '/';
+});
+
+if (history.length) {
+  document.querySelector('.clear').appendChild(clearBtn);
+}
+
 history.forEach(({ expression, result }) => {
   const card = document.createElement('div');
   const btn = document.createElement('button');
