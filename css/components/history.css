@@ -1,0 +1,23 @@
+#history {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.5rem;
+  padding-inline: 1rem;
+}
+
+.history-item {
+  border: 1px solid black;
+  padding: 0.35rem;
+  text-align: end;
+  overflow-x: auto;
+  border-radius: 0.25rem;
+  display: grid;
+  gap: 0.35rem;
+
+  button {
+    width: fit-content;
+    padding: 0.2rem;
+    position: sticky;
+    left: 0;
+  }
+}
