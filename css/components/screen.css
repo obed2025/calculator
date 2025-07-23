@@ -1,0 +1,19 @@
+.screen {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 2rem;
+  text-align: end;
+  overflow-x: auto;
+
+  &:focus-visible {
+    border-color: transparent;
+  }
+
+  &[error='true'] {
+    border-color: red;
+    color: red;
+  }
+}

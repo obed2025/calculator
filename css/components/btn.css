@@ -1,0 +1,14 @@
+.btn {
+  padding: 0.85rem;
+  border-radius: 2px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btn--equal-sign {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+}

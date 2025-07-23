@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="/css/general/reset.css" />
+    <link rel="stylesheet" href="/css/general/layout.css" />
+    <link rel="stylesheet" href="./css/components/screen.css" />
+    <link rel="stylesheet" href="./css/components/keyboard.css" />
+    <link rel="stylesheet" href="./css/components/btn.css" />
+
+    <script type="module" src="./js/display.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1 class="center-text">CALCULATOR</h1>
+      </div>
+    </header>
+
+    <main class="calculator wrapper">
+      <input type="text" class="screen" />
+      <div class="keyboard">
+        <button class="btn" data-value="e">e</button>
+        <button class="btn" data-action="clear">C</button>
+        <button class="btn" data-action="delete">D</button>
+        <button class="btn" data-value="/">&divide;</button>
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn" data-value="*">&times;</button>
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn" data-value="-">&minus;</button>
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn" data-value="+">&plus;</button>
+        <button class="btn" data-action="negate">&plus;/&minus;</button>
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn btn--equal-sign" data-action="calculate">
+          &equals;
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <p>
+          Did you know that your calculations are saved?
+          <a href="/history">Check history !</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

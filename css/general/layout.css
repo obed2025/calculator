@@ -1,0 +1,23 @@
+.wrapper {
+  margin-inline: auto;
+  max-width: 20rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+main {
+  margin-block: 1.5rem;
+}
+
+header,
+footer {
+  background-color: var(--blue);
+  color: white;
+  padding-block: 0.75rem;
+
+  a {
+    color: inherit;
+  }
+}
